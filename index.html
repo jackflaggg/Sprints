@@ -10,8 +10,11 @@
 <body>
 <script src="/01.js"></script>
 <script>
+    //let one
     console.log( 'Привет, мир!' );
     document.write('<h1>', 'Привет, мир!', '</h1>');
+
+    //let two
     let name = 'it-incubator';
 
     let graduatesCount = 2000;
@@ -24,6 +27,7 @@
 
     document.write('<input type="checkbox"', areYouChampion ? ' checked ': '', '>');
 
+    //let three
     let student = {
         info: {
             firstName: 'Ivan',
@@ -34,7 +38,31 @@
             city: 'Paris',
         }
     }
-    document.write('<p>', JSON.stringify(student, null, "\t"),'</p>')
+    document.write('<p>', JSON.stringify(student, null, "\t"),'</p>');
+
+    //let four
+    let card1 = {
+        type: 'debit',
+        networkType: 'mastercard',
+        currencyType: 1,
+        balance: 5750.53,
+        number: 5282345678901289,
+        expirationYear: 2025,
+        expirationMonth: 9
+    };
+
+    let card2 = {
+        type: 'credit',
+        networkType: 'visa',
+        currencyType: 2,
+        balance: 1343.53,
+        number: 9232654321012032,
+        expirationYear: 2026,
+        expirationMonth: 4
+    };
+
+    document.write('<p>', JSON.stringify(card1, null, "\t"),'</p>');
+    document.write('<p>', JSON.stringify(card2, null, "\t"),'</p>');
 </script>
 </body>
 </html>
