@@ -24,7 +24,17 @@
 
     document.write('<input type="checkbox"', areYouChampion ? ' checked ': '', '>');
 
-  //  document.write(<p>info.firstName</p>);
+    let student = {
+        info: {
+            firstName: 'Ivan',
+            lastName: 'Ivanov'
+        },
+        address: {
+            country: 'France',
+            city: 'Paris',
+        }
+    }
+    document.write('<p>', JSON.stringify(student, null, "\t"),'</p>')
 </script>
 </body>
 </html>
