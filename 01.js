@@ -1,13 +1,14 @@
-var car = {
-    "model": "Dodge",
-    "year": 1967,
-    "color": "red",
-    "body": "Hard top"
-}
-
-for (let j in car) {
-    const element = document.getElementById(j);
-    if (element) {
-        element.innerHTML = (car[j]);
+let marks = [{
+    title: 'JS',
+    value: 10,
+},
+    {
+        title: 'CS',
+        value: 6,
     }
+];
+// отобразим в консоли все заголовки с оценками
+for (let i = 0; i <= marks.length; i++) {
+    let mark = marks[i];
+    console.log("title: " + mark.title, ", mark: " + mark.value);
 }
